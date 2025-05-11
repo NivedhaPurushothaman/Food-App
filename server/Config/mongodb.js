@@ -1,13 +1,10 @@
 const mongoose =require('mongoose');
 
-let connectionString = 'mongodb+srv://Nivedha:daddy@cluster0.oqrwxsz.mongodb.net/?retryWrites=true&w=majority'
+let connectionString = 'mongodb://localhost:27017'
 const connectToDB = async()=>{
     try{
-    await mongoose.connect(connectionString,{
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      });
-      console.log('Connection is successful');
+    await mongoose.connect(connectionString);
+      console.log('DB Connection is successful');
     }catch(error){
         console.log(`Error in connection to DB : ${error}`)
     }
