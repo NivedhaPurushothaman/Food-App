@@ -1,2 +1,2 @@
-# Food-App
-Food App with Mern Tech
+# Automated SaaS Billing and Subscription management System
+
